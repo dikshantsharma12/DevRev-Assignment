@@ -1,0 +1,138 @@
+.filterable-table-container ul.pagination {
+  list-style: none;
+  justify-content: center;
+}
+
+.filter-container {
+  display: flex;
+}
+.filter-container input, .filterable-table-container select {
+   height: 34px;
+   border-radius:0;
+   padding: 5px 10px;
+}
+.pagination {
+  margin-top: 1.5rem;
+  margin-bottom: .5rem;
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: .25rem;
+}
+.filterable-table-container ul.pagination {
+  list-style: none;
+  justify-content: center;
+}
+.pagination li a {
+  position: relative;
+  display: block;
+  padding: .5rem .75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  font-size: 13px;
+  cursor: pointer;
+}
+.pagination li.disabled a {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: auto;
+  background-color: #fff;
+  border-color: #dee2e6;
+}
+.pagination li.active a {
+  z-index: 1;
+  color: #fff;
+  background-color: #2f313e;
+  border-color: #2f313e;
+}
+.record-count {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 700;
+}
+.clear-filter {
+  background: #2f313e;
+  color: #fff;
+  text-shadow: none;
+  padding: 0;
+  opacity: 1;
+  font-size: 24px;
+  border-radius: 0;
+  width: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  cursor: pointer;
+}
+.clear-filter:hover { background: rgb(47 49 62); opacity: 1 !important; color: #fff;}
+.card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.5rem;
+}
+
+table {
+  border-spacing: 0;
+  border: 1px solid #ededed;
+  width: 100%;
+}
+table tr:last-child td {
+  border-bottom: 0;
+}
+table th,
+table td {
+  margin: 0;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+  position: relative;
+}
+table th:last-child,
+table td:last-child {
+  border-right: 0;
+}
+table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+table th::before {
+  position: absolute;
+  right: 15px;
+  top: 16px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+table th.sort-asc::before {
+  border-bottom: 5px solid #22543d;
+}
+table th.sort-desc::before {
+  border-top: 5px solid #22543d;
+}
+
+.table-container{
+  margin-top: 1.5rem;
+}
+
+.table-container>div {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.col-sm-push-4{
+  margin-top: 10px;
+}
+
+.col-sm-push-4>select{
+  font-weight: bold;
+}
